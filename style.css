@@ -35,14 +35,14 @@
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    background-image: url(/img/AbdulhakimLogo.png);
+    background-image: url(img/AbdulhakimLogo.png);
     background-size: cover;
     background-position: center;
     transition: 3s all;
     margin-left: 200px;
 }
 .home-img:hover{
-    background-image: url(/img/AbdulhakimLogo-hover.png);
+    background-image: url(img/AbdulhakimLogo-hover.png);
     transform: rotate(360deg);
 }
 @keyframes home-text-anime{
