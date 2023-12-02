@@ -1,0 +1,272 @@
+.spinner-box{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spinner-border{
+    width: 5rem;
+    height: 5rem;
+    border-width: 0.5rem;
+}
+/* Home */
+#home{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-title-1 , .home-title-2, .home-title-3 , .home-title-anime{
+    font-size: 30px;
+}
+.home-title-anime{
+    height: 36px;
+    background-color: white;
+    overflow: hidden;
+    display: inline-block;
+}
+.home-title-2{
+    display: inline-block;
+}
+.home-title-anime-child-1{
+    animation: home-text-anime 3s infinite;
+}
+.home-img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-image: url(/img/AbdulhakimLogo.png);
+    background-size: cover;
+    background-position: center;
+    transition: 3s all;
+    margin-left: 200px;
+}
+.home-img:hover{
+    background-image: url(/img/AbdulhakimLogo-hover.png);
+    transform: rotate(360deg);
+}
+@keyframes home-text-anime{
+    0%{
+        margin-top: 0;
+    }
+    50%{
+        margin-top: -44px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+/* Home */
+/* About */
+#about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.about-texts-box{
+    flex-direction: column;
+}
+.about-me-title{
+    font-size: 30px;
+}
+.about-img{
+    width: 350px;
+    border-radius: 100%;
+}
+.about-row{
+    margin-top: 10%;
+}
+/* About */
+/* ScrollTop */
+.scrollTop{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    color: black;
+    position: fixed;
+    z-index: 3;
+    margin-top: 90vh;
+    margin-left: 93vw;
+    border-radius: 10px;
+    background: white;
+    display: none;
+}
+.scrolTopHref{
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.scrolltopactiv{
+    display: block;
+}
+/* ScrollTop */
+/* My knows */
+.Myknows-card{
+    border:none;
+}
+.Myknowanime-box{
+    display: flex;
+    flex-direction: column;
+}
+.Myknows-card-img-box{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Myknow-img{
+    width: 10rem;
+    height: 10rem;
+}
+.Myknowanime-main{
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/* Animation */
+.Myknowanime-1{
+    width: 85%;
+    animation-name: Myknowanime-1;
+    animation-duration: 5s;
+}
+@keyframes Myknowanime-1{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+.Myknowanime-2{
+    width: 70%;
+    animation-duration: 5s;
+    animation-name: Myknowanime-2;
+}
+@keyframes Myknowanime-2{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+.Myknowanime-3{
+    width: 90%;
+    animation-duration: 5s;
+    animation-name: Myknowanime-3;
+}
+@keyframes Myknowanime-3{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+.Myknowanime-4{
+    width: 30%;
+    animation-duration: 5s;
+    animation-name: Myknowanime-4;
+}
+@keyframes Myknowanime-4{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+
+.Myknowanime-5{
+    width: 10%;
+    animation-duration: 5s;
+    animation-name: Myknowanime-5;
+}
+@keyframes Myknowanime-5{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 10%;
+    }
+}
+
+.Myknowanime-6{
+    width: 0%;
+    animation-duration: 5s;
+    animation-name: Myknowanime-6;
+}
+@keyframes Myknowanime-6{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+/* Animation */
+/* My knows */
+/* Contact */
+
+#Contact{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-inputs{
+    border-color: black;
+}
+
+/* Contact */
+/* Footer */
+
+#footer{
+    height: 40vh;
+    background-color: #212426;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer */
+
+@media screen and (min-width:998px){
+    .navbar-nav{
+        display: flex;
+        justify-content:space-between;
+        width: 50%;
+    }
+    .navbar-collapse{
+        display: flex;
+        justify-content: end;
+    }
+}
+@media screen and (max-width:998px){
+    .about-img{
+        width: 50%;
+    }
+    .scrollTop{
+        margin-left: 80vw;
+    }
+    .about-row{
+        margin-top: 15%;
+    }
+    #footer{
+        height: 100vh;
+    }
+}
